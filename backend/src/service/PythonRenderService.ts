@@ -17,7 +17,9 @@ export class PythonRenderService {
     return new Promise((resolve, reject) => {
       const scriptPath = path.join(process.cwd(), "python", "render.py");
 
-      const python = spawn("python", [scriptPath], {
+      const pythonCmd = process.platform === "win32" ? "python" : "python3";
+
+      const python = spawn(pythonCmd, [scriptPath], {
         cwd: process.cwd(),
       });
 
