@@ -27,16 +27,16 @@ form.addEventListener("submit", async function (event) {
     return;
   }
 
+  const imagenGenerada = await genImagen(template, nombre, monto, numeroCuenta, numeroTuCuenta);
+
+  if (!imagenGenerada) {
+    return;
+  }
+
   const restoTokens = await restarTokens(codigo, 2);
 
   if (!restoTokens) {
     alert("No se pudieron descontar tokens");
-    return;
-  }
-
-  const imagenGenerada = await genImagen(template, nombre, monto, numeroCuenta, numeroTuCuenta);
-
-  if (!imagenGenerada) {
     return;
   }
 
