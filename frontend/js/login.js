@@ -12,7 +12,7 @@ formLogin.addEventListener("submit", async (e) => {
   }
 
   try {
-    const response = await fetch(`http://localhost:3000/api/usuario/${codigo}`);
+    const response = await fetch(`https://compro-web-qxhk.onrender.com/api/usuario/${codigo}`);
     const data = await response.json();
 
     if (!response.ok || !data.ok) {
