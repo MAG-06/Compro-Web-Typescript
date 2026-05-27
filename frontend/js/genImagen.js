@@ -45,7 +45,7 @@ form.addEventListener("submit", async function (event) {
 
 async function genImagen(template, nombre, monto, numeroCuenta, numeroTuCuenta) {
   try {
-    const response = await fetch("http://localhost:3000/api/generar-imagen", {
+    const response = await fetch("https://compro-web-qxhk.onrender.com/api/generar-imagen", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -79,7 +79,7 @@ async function genImagen(template, nombre, monto, numeroCuenta, numeroTuCuenta) 
 
 async function restarTokens(codigo, tokensARestar) {
   try {
-    const response = await fetch("http://localhost:3000/api/usuario/restarTokens", {
+    const response = await fetch("https://compro-web-qxhk.onrender.com/api/usuario/restarTokens", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
