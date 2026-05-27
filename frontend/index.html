@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="module" defer src="./js/index.js"></script>
+    <script type="module" defer src="./js/index2.js"></script>
+    <title>Inicio</title>
+</head>
+
+<body>
+
+    <header class="HeaderPrincipal">
+
+        <div class="logo">
+            <img src="https://previews.123rf.com/images/natbasil/natbasil1707/natbasil170700022/83130433-hacker-on-binary-code-background-vector-illustration.jpg"
+                alt="Logo de la empresa" class="Logo">
+        </div>
+
+        <div class="titulo">
+            <h1>Genera tu imagen</h1>
+        </div>
+
+        <div class="tokens">
+            <p>Tokens disponibles:</p>
+            <p id="tokenCount">0</p>
+        </div>
+
+
+    </header>
+
+    <div class="nav">
+        <nav class="nav-links">
+            <a href="https://t.me/millo_o_muerto">Contacto</a>
+        </nav>
+    </div>
+
+    <main>
+
+        <section class="sectionPrincipal">
+
+            <div class="formBlanco">
+                <form id="formBanBlanco">
+                    <label for="prompt">Llena los datos para generar imagen:</label>
+                    <p>Nombre (Persona a recibir)</p>
+                    <input type="text" id="nombre" required placeholder="Camila Andrea Fernandez Diaz">
+                    <p>Monto</p>
+                    <input type="text" id="monto" required placeholder="Ej: 1000000">
+                    <p>Numero account (Persona a recibir)</p>
+                    <input type="text" id="numeroCuenta" required placeholder="Ej: 34327477481">
+                    <p>Ultimos 4 digitos de tu numero de account</p>
+                    <input type="text" id="numeroTuCuenta" required placeholder="Ej: 2348">
+
+                    <select name="template" id="template">
+                        <option value="blanco">Blanco</option>
+                        <option value="negro">Negro</option>
+                    </select>
+                    <button type="submit">Crear</button>
+
+
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html>
